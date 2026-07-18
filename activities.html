@@ -6,7 +6,7 @@
   <title>Activities | Fairy Hummings by Nisini</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Bubblegum+Sans&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Bubblegum+Sans&family=Noto+Sans+Sinhala:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,37 +16,46 @@
       <span class="brand-by">by Nisini</span>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="stories.html">Stories</a>
-      <a class="active" href="activities.html">Activities</a>
-      <a href="about.html">About</a>
+      <a href="index.html" data-i18n="navHome">Home</a>
+      <a href="stories.html" data-i18n="navStories">Stories</a>
+      <a class="active" href="activities.html" data-i18n="navActivities">Activities</a>
+      <a href="about.html" data-i18n="navAbout">About</a>
     </nav>
     <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    <a class="login-link" href="index.html#login">Login / Sign Up</a>
+    <div class="header-actions">
+      <label class="language-label">
+        <span data-i18n="languageLabel">Language</span>
+        <select class="language-select" aria-label="Select language">
+          <option value="en">English</option>
+          <option value="si">සිංහල</option>
+        </select>
+      </label>
+      <a class="login-link" href="index.html#login" data-i18n="loginLink">Login / Sign Up</a>
+    </div>
   </header>
 
   <main class="page-shell">
     <section class="page-hero">
-      <p class="kicker">Play and Learn</p>
-      <h1>Activities for Little Hands</h1>
-      <p>Simple activities children can enjoy after each story.</p>
+      <p class="kicker" data-i18n="activitiesKicker">Play and Learn</p>
+      <h1 data-i18n="activitiesTitle">Activities for Little Hands</h1>
+      <p data-i18n="activitiesIntro">Simple activities children can enjoy after each story.</p>
     </section>
 
     <section class="card-grid">
       <article class="activity-card">
         <span class="activity-icon">C</span>
-        <h2>Color the Character</h2>
-        <p>Print or draw Bunny Benny and fill him with happy colors.</p>
+        <h2 data-i18n="colorTitle">Color the Character</h2>
+        <p data-i18n="colorDesc">Print or draw Bunny Benny and fill him with happy colors.</p>
       </article>
       <article class="activity-card">
         <span class="activity-icon">K</span>
-        <h2>Kindness Seed</h2>
-        <p>Write one kind action and place it in a little paper flower.</p>
+        <h2 data-i18n="kindnessTitle">Kindness Seed</h2>
+        <p data-i18n="kindnessDesc">Write one kind action and place it in a little paper flower.</p>
       </article>
       <article class="activity-card">
         <span class="activity-icon">S</span>
-        <h2>Story Star</h2>
-        <p>Pick a favorite part and tell it back in your own words.</p>
+        <h2 data-i18n="storyStarTitle">Story Star</h2>
+        <p data-i18n="storyStarDesc">Pick a favorite part and tell it back in your own words.</p>
       </article>
     </section>
   </main>

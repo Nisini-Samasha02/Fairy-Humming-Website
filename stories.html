@@ -6,7 +6,7 @@
   <title>Stories | Fairy Hummings by Nisini</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Bubblegum+Sans&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Bubblegum+Sans&family=Noto+Sans+Sinhala:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,40 +16,52 @@
       <span class="brand-by">by Nisini</span>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a class="active" href="stories.html">Stories</a>
-      <a href="activities.html">Activities</a>
-      <a href="about.html">About</a>
+      <a href="index.html" data-i18n="navHome">Home</a>
+      <a class="active" href="stories.html" data-i18n="navStories">Stories</a>
+      <a href="activities.html" data-i18n="navActivities">Activities</a>
+      <a href="about.html" data-i18n="navAbout">About</a>
     </nav>
     <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    <a class="login-link" href="index.html#login">Login / Sign Up</a>
+    <div class="header-actions">
+      <label class="language-label">
+        <span data-i18n="languageLabel">Language</span>
+        <select class="language-select" aria-label="Select language">
+          <option value="en">English</option>
+          <option value="si">සිංහල</option>
+        </select>
+      </label>
+      <a class="login-link" href="index.html#login" data-i18n="loginLink">Login / Sign Up</a>
+    </div>
   </header>
 
   <main class="page-shell">
     <section class="page-hero">
-      <p class="kicker">Story Garden</p>
-      <h1>Pick a Sweet Story</h1>
-      <p>Short, gentle stories made for small readers, bedtime moments, and classroom smiles.</p>
+      <p class="kicker" data-i18n="storiesKicker">Story Garden</p>
+      <h1 data-i18n="storiesTitle">Pick a Sweet Story</h1>
+      <p data-i18n="storiesIntro">Short, gentle stories made for small readers, bedtime moments, and classroom smiles.</p>
     </section>
 
     <section class="card-grid story-list">
       <article class="story-card">
-        <div class="story-thumb rabbit"></div>
-        <h2>The Brave Little Rabbit</h2>
-        <p>A little rabbit learns that courage can be soft and kind.</p>
-        <a class="btn btn-small" href="#">Read Story</a>
+        <div class="story-thumb story-thumb-art">
+          <img class="story-thumb-image language-image en-image" src="assets/magical-forest-en.jpeg" alt="Magical forest story cover">
+          <img class="story-thumb-image language-image si-image" src="assets/magical-forest-si.jpeg" alt="මැජික් කැලේ story cover">
+        </div>
+        <h2 data-i18n="braveRabbitTitle">Magical forest</h2>
+        <p data-i18n="storyRabbitCardDesc">A magical forest opens a world of wonder, friendship, and imagination.</p>
+        <a class="btn btn-small" href="#" data-story-open="magicalForest" data-i18n="readStory">Read Story</a>
       </article>
       <article class="story-card">
         <div class="story-thumb star"></div>
-        <h2>The Star That Shared</h2>
-        <p>A tiny star discovers how beautiful sharing light can be.</p>
-        <a class="btn btn-small" href="#">Read Story</a>
+        <h2 data-i18n="starTitle">The Star That Shared</h2>
+        <p data-i18n="starDesc">A tiny star discovers how beautiful sharing light can be.</p>
+        <a class="btn btn-small" href="#" data-i18n="readStory">Read Story</a>
       </article>
       <article class="story-card">
         <div class="story-thumb flower"></div>
-        <h2>Mila&apos;s Magic Flower</h2>
-        <p>A flower blooms whenever Mila says something kind.</p>
-        <a class="btn btn-small" href="#">Read Story</a>
+        <h2 data-i18n="flowerTitle">Mila&apos;s Magic Flower</h2>
+        <p data-i18n="flowerDesc">A flower blooms whenever Mila says something kind.</p>
+        <a class="btn btn-small" href="#" data-i18n="readStory">Read Story</a>
       </article>
     </section>
   </main>

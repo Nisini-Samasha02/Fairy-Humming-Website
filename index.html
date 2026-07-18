@@ -6,7 +6,7 @@
   <title>Fairy Hummings by Nisini</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Bubblegum+Sans&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Bubblegum+Sans&family=Noto+Sans+Sinhala:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,10 +17,10 @@
     </a>
 
     <nav class="main-nav" aria-label="Main navigation">
-      <a class="active" href="index.html">Home</a>
-      <a href="stories.html">Stories</a>
-      <a href="activities.html">Activities</a>
-      <a href="about.html">About</a>
+      <a class="active" href="index.html" data-i18n="navHome">Home</a>
+      <a href="stories.html" data-i18n="navStories">Stories</a>
+      <a href="activities.html" data-i18n="navActivities">Activities</a>
+      <a href="about.html" data-i18n="navAbout">About</a>
     </nav>
 
     <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
@@ -29,94 +29,104 @@
       <span></span>
     </button>
 
-    <a class="login-link" href="#login">Login / Sign Up</a>
+    <div class="header-actions">
+      <label class="language-label">
+        <span data-i18n="languageLabel">Language</span>
+        <select class="language-select" aria-label="Select language">
+          <option value="en">English</option>
+          <option value="si">සිංහල</option>
+        </select>
+      </label>
+      <a class="login-link" href="#login" data-i18n="loginLink">Login / Sign Up</a>
+    </div>
   </header>
 
   <main>
     <section class="hero home-hero" aria-label="Fairy Hummings welcome">
       <div class="hero-copy">
-        <p class="kicker">Magical tales for little hearts</p>
-        <h1>Every Story Plants a Dream.</h1>
-        <p>Sweet stories, kind characters, and playful activities to help children read, imagine, and smile.</p>
+        <p class="kicker" data-i18n="homeKicker">Magical tales for little hearts</p>
+        <h1 data-i18n="homeTitle">Every Story Plants a Dream.</h1>
+        <p data-i18n="homeIntro">Sweet stories, Cute characters, and playful activities to help children read, imagine, and smile.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="stories.html">Read Stories</a>
-          <a class="btn btn-secondary" href="activities.html">Try Activities</a>
+          <a class="btn btn-primary" href="stories.html" data-i18n="readStories">Read Stories</a>
+          <a class="btn btn-secondary" href="activities.html" data-i18n="tryActivities">Try Activities</a>
         </div>
       </div>
     </section>
 
     <section class="section-grid">
       <article class="feature-panel story-feature">
-        <div class="story-cover">
-          <span>The Brave<br>Little Rabbit</span>
+        <div class="story-cover story-cover-art">
+          <img class="story-cover-image language-image en-image" src="assets/magical-forest-en.jpeg" alt="Magical forest story cover">
+          <img class="story-cover-image language-image si-image" src="assets/magical-forest-si.jpeg" alt="මැජික් කැලේ story cover">
         </div>
         <div>
-          <p class="eyebrow">Featured Story</p>
-          <h2>The Brave Little Rabbit</h2>
-          <p>A gentle adventure about courage, friendship, and believing in your own tiny sparkle.</p>
+          <p class="eyebrow" data-i18n="featuredStory">Featured Story</p>
+          <h2 data-i18n="braveRabbitTitle">Magical forest</h2>
+          <p data-i18n="braveRabbitDesc">A colorful forest adventure with friendly mushrooms, sweet animals, and a little fairy sparkle.</p>
           <div class="tiny-stats">
-            <span>Age 4-7</span>
-            <span>8 min read</span>
+            <span data-i18n="ageRange">Age 4-7</span>
+            <span data-i18n="readTime">8 min read</span>
           </div>
-          <a class="btn btn-small" href="stories.html">Read Story</a>
+          <a class="btn btn-small" href="stories.html" data-i18n="readStory">Read Story</a>
         </div>
       </article>
 
       <article class="feature-panel">
-        <p class="eyebrow">Categories</p>
-        <h2>Choose a Magical Corner</h2>
+        <p class="eyebrow" data-i18n="categories">Categories</p>
+        <h2 data-i18n="chooseCorner">Choose a Magical Corner</h2>
         <div class="category-grid">
-          <a href="stories.html">Teddy Tales</a>
-          <a href="stories.html">Fairy Tales</a>
-          <a href="stories.html">Adventure</a>
-          <a href="stories.html">Friendship</a>
-          <a href="stories.html">Moral Stories</a>
-          <a href="stories.html">Funny Stories</a>
+          <a href="stories.html" data-i18n="teddyTales">Teddy Tales</a>
+          <a href="stories.html" data-i18n="fairyTales">Fairy Tales</a>
+          <a href="stories.html" data-i18n="adventure">Adventure</a>
+          <a href="stories.html" data-i18n="friendship">Friendship</a>
+          <a href="stories.html" data-i18n="moralStories">Moral Stories</a>
+          <a href="stories.html" data-i18n="funnyStories">Funny Stories</a>
         </div>
       </article>
     </section>
 
     <section class="author-strip">
-      <div class="author-photo" aria-hidden="true">N</div>
+      <img class="author-photo" src="assets/nisini-photo.png" alt="Nisini">
       <div>
-        <p class="eyebrow">Meet the Author</p>
-        <h2>Hi! I&apos;m Nisini.</h2>
-        <p>I create soft, happy stories that help children dream, learn, and grow with kindness.</p>
-        <a class="btn btn-secondary btn-small" href="about.html">Learn More</a>
+        <p class="eyebrow" data-i18n="meetAuthor">Meet the Author</p>
+        <h2 data-i18n="homeAuthorTitle">Hi! I&apos;m Nisini.</h2>
+        <p data-i18n="homeAuthorDesc">I create soft, happy stories that help children dream, learn, and grow with kindness.</p>
+        <a class="btn btn-secondary btn-small" href="about.html" data-i18n="learnMore">Learn More</a>
       </div>
       <div class="author-art" aria-hidden="true">*</div>
     </section>
 
     <section class="characters-section">
-      <p class="eyebrow">Featured Characters</p>
-      <h2>Friends Children Can Love</h2>
+      <p class="eyebrow" data-i18n="featuredCharacters">Featured Characters</p>
+      <h2 data-i18n="charactersTitle">Friends Children Can Love</h2>
       <div class="character-grid">
         <article>
           <div class="character-avatar bunny"></div>
-          <h3>Bunny Benny</h3>
-          <p>Brave, gentle, and always ready for adventure.</p>
+          <h3 data-i18n="bunnyName">Bunny Benny</h3>
+          <p data-i18n="bunnyDesc">Brave, gentle, and always ready for adventure.</p>
         </article>
         <article>
           <div class="character-avatar fox"></div>
-          <h3>Foxy Finn</h3>
-          <p>Curious, clever, and helpful to every friend.</p>
+          <h3 data-i18n="foxName">Foxy Finn</h3>
+          <p data-i18n="foxDesc">Curious, clever, and helpful to every friend.</p>
         </article>
         <article>
           <div class="character-avatar bear"></div>
-          <h3>Bella Bear</h3>
-          <p>Warm-hearted and full of cozy hugs.</p>
+          <h3 data-i18n="bearName">Bella Bear</h3>
+          <p data-i18n="bearDesc">Warm-hearted and full of cozy hugs.</p>
         </article>
         <article>
           <div class="character-avatar owl"></div>
-          <h3>Oliver Owl</h3>
-          <p>Wise, calm, and a little bit funny.</p>
+          <h3 data-i18n="owlName">Oliver Owl</h3>
+          <p data-i18n="owlDesc">Wise, calm, and a little bit funny.</p>
         </article>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>New stories every week to inspire little hearts and minds.</p>
+    <p data-i18n="homeFooter">New stories every week to inspire little hearts and minds.</p>
   </footer>
 
   <script src="script.js"></script>

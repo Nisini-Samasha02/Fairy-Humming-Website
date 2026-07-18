@@ -6,7 +6,7 @@
   <title>About | Fairy Hummings by Nisini</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Bubblegum+Sans&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Bubblegum+Sans&family=Noto+Sans+Sinhala:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,23 +16,32 @@
       <span class="brand-by">by Nisini</span>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="stories.html">Stories</a>
-      <a href="activities.html">Activities</a>
-      <a class="active" href="about.html">About</a>
+      <a href="index.html" data-i18n="navHome">Home</a>
+      <a href="stories.html" data-i18n="navStories">Stories</a>
+      <a href="activities.html" data-i18n="navActivities">Activities</a>
+      <a class="active" href="about.html" data-i18n="navAbout">About</a>
     </nav>
     <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    <a class="login-link" href="index.html#login">Login / Sign Up</a>
+    <div class="header-actions">
+      <label class="language-label">
+        <span data-i18n="languageLabel">Language</span>
+        <select class="language-select" aria-label="Select language">
+          <option value="en">English</option>
+          <option value="si">සිංහල</option>
+        </select>
+      </label>
+      <a class="login-link" href="index.html#login" data-i18n="loginLink">Login / Sign Up</a>
+    </div>
   </header>
 
   <main class="page-shell">
     <section class="about-layout">
-      <div class="about-portrait">N</div>
+      <img class="about-portrait" src="assets/nisini-photo.png" alt="Nisini">
       <div class="about-copy">
-        <p class="kicker">About the Author</p>
-        <h1>Hi, I&apos;m Nisini.</h1>
-        <p>Fairy Hummings is a gentle place for children to discover magical stories, friendly characters, and small lessons about courage, kindness, and imagination.</p>
-        <p>I hope every story feels like a warm bedtime hug and gives little readers a happy dream to carry with them.</p>
+        <p class="kicker" data-i18n="aboutKicker">About the Author</p>
+        <h1 data-i18n="aboutTitle">Hi, I&apos;m Nisini.</h1>
+        <p data-i18n="aboutIntro">Fairy Hummings is a gentle place for children to discover magical stories, friendly characters, and small lessons about courage, kindness, and imagination.</p>
+        <p data-i18n="aboutHope">I hope every story feels like a warm bedtime hug and gives little readers a happy dream to carry with them.</p>
       </div>
     </section>
   </main>
