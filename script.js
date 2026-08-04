@@ -18,14 +18,9 @@ const translations = {
     ageRange: "Age 4-7",
     readTime: "8 min read",
     readStory: "Read Story",
-    categories: "Categories",
-    chooseCorner: "Choose a Magical Corner",
-    teddyTales: "Teddy Tales",
-    fairyTales: "Fairy Tales",
-    adventure: "Adventure",
-    friendship: "Friendship",
-    moralStories: "Moral Stories",
-    funnyStories: "Funny Stories",
+    upcomingStory: "Upcoming Story",
+    upcomingStoryTitle: "New adventure coming soon",
+    upcomingStoryDesc: "A fresh Fairy Hummings story is getting ready for little readers.",
     meetAuthor: "Meet the Author",
     homeAuthorTitle: "Hi! I'm Nisini.",
     homeAuthorDesc: "I create soft, happy stories that help children dream, learn, and grow with kindness.",
@@ -45,15 +40,27 @@ const translations = {
     storiesTitle: "Pick a Sweet Story",
     storiesIntro: "Short, gentle stories made for small readers, bedtime moments, and classroom smiles.",
     storyRabbitCardDesc: "A magical forest opens a world of wonder, friendship, and imagination.",
-    starTitle: "The Star That Shared",
+    starTitle: "Tikki's Library",
     starDesc: "A tiny star discovers how beautiful sharing light can be.",
-    flowerTitle: "Mila's Magic Flower",
+    flowerTitle: "We are friends",
     flowerDesc: "A flower blooms whenever Mila says something kind.",
     activitiesKicker: "Play and Learn",
     activitiesTitle: "Activities for Little Hands",
     activitiesIntro: "Simple activities children can enjoy after each story.",
-    colorTitle: "Color the Character",
-    colorDesc: "Print or draw Bunny Benny and fill him with happy colors.",
+    colorTitle: "Colour the Characters",
+    colorDesc: "Open the fairy coloring page and fill it with happy colors.",
+    openColoring: "Start Coloring",
+    coloringTitle: "Colour the Characters",
+    coloringSheets: "Pages",
+    characterSheet: "MF 1",
+    forestSheet: "MF 2",
+    forestSheetThree: "MF 3",
+    coloringPalette: "Colors",
+    paintTool: "Paint",
+    eraserTool: "Eraser",
+    brushSize: "Brush Size",
+    clearColoring: "Clear",
+    closeColoring: "Close coloring activity",
     kindnessTitle: "Kindness Seed",
     kindnessDesc: "Write one kind action and place it in a little paper flower.",
     storyStarTitle: "Story Star",
@@ -90,14 +97,9 @@ const translations = {
     ageRange: "වයස 4-7",
     readTime: "මිනිත්තු 8ක කියවීම",
     readStory: "කතාව කියවන්න",
-    categories: "වර්ග",
-    chooseCorner: "මායාමය කොණක් තෝරන්න",
-    teddyTales: "ටෙඩි කතා",
-    fairyTales: "සුරංගනා කතා",
-    adventure: "වික්‍රම",
-    friendship: "මිත්‍රත්වය",
-    moralStories: "හරවත් කතා",
-    funnyStories: "විහිළු කතා",
+    upcomingStory: "ඉදිරියේදී එන කතාව",
+    upcomingStoryTitle: "නව වික්‍රමයක් ළඟදීම",
+    upcomingStoryDesc: "කුඩා පාඨකයින් සඳහා අලුත් Fairy Hummings කතාවක් සූදානම් වෙමින් පවතී.",
     meetAuthor: "කතුවරිය හමුවන්න",
     homeAuthorTitle: "හායි! මම Nisini.",
     homeAuthorDesc: "දරුවන්ට සිහින දකින්න, ඉගෙන ගන්න, සහ කරුණාවෙන් වැඩෙන්න උපකාර කරන මෘදු සතුටු කතා මම නිර්මාණය කරමි.",
@@ -117,15 +119,27 @@ const translations = {
     storiesTitle: "මිහිරි කතාවක් තෝරන්න",
     storiesIntro: "කුඩා පාඨකයින්ට, නින්දට පෙර මොහොතවල්ට, සහ පන්ති කාමර සිනා සඳහා සාදන ලද කෙටි මෘදු කතා.",
     storyRabbitCardDesc: "මැජික් කැලේ තුළින් පුදුමය, මිත්‍රත්වය, සහ පරිකල්පනය පිරුණු ලෝකයක් විවෘත වේ.",
-    starTitle: "බෙදාගත් තරුව",
+    starTitle: "\u0da7\u0dd2\u0d9a\u0dca\u0d9a\u0dd2\u0d9c\u0dda \u0db4\u0dd4\u0dc3\u0dca\u0dad\u0d9a\u0dcf\u0dbd\u0dba",
     starDesc: "ආලෝකය බෙදාගැනීම කොතරම් ලස්සනදැයි පුංචි තරුවක් සොයා ගනී.",
     flowerTitle: "Milaගේ මායාමය මල",
     flowerDesc: "Mila කරුණාවන්ත දෙයක් කියන සෑම විටම මලක් පිපෙයි.",
     activitiesKicker: "සෙල්ලම් කර ඉගෙන ගන්න",
     activitiesTitle: "පුංචි අත් සඳහා ක්‍රියාකාරකම්",
     activitiesIntro: "සෑම කතාවකට පසුවම දරුවන්ට රසවිඳිය හැකි සරල ක්‍රියාකාරකම්.",
-    colorTitle: "චරිතයට වර්ණ දමන්න",
-    colorDesc: "Bunny Benny මුද්‍රණය කර හෝ ඇඳ, සතුටු වර්ණ වලින් පුරවන්න.",
+    colorTitle: "Colour the Characters",
+    colorDesc: "සුරංගනා coloring page එක විවෘත කර සතුටු වර්ණ වලින් පුරවන්න.",
+    openColoring: "වර්ණ දමන්න",
+    coloringTitle: "Colour the Characters",
+    coloringSheets: "Pages",
+    characterSheet: "MF 1",
+    forestSheet: "MF 2",
+    forestSheetThree: "MF 3",
+    coloringPalette: "වර්ණ",
+    paintTool: "Paint",
+    eraserTool: "Eraser",
+    brushSize: "Brush ප්‍රමාණය",
+    clearColoring: "මකන්න",
+    closeColoring: "වර්ණ ක්‍රියාකාරකම වසන්න",
     kindnessTitle: "කරුණාවේ බීජය",
     kindnessDesc: "කරුණාවන්ත ක්‍රියාවක් ලියා, පුංචි කඩදාසි මලක තබන්න.",
     storyStarTitle: "කතා තරුව",
@@ -167,6 +181,17 @@ const loginLinks = document.querySelectorAll(".login-link");
 const savedLanguage = getSavedLanguage();
 let currentLanguage = savedLanguage === "si" ? "si" : "en";
 
+function createImagePages(folder, title, pageCount, extension = "jpg") {
+  return Array.from({ length: pageCount }, (_, index) => {
+    const pageNumber = String(index + 1).padStart(2, "0");
+
+    return {
+      src: `${folder}/page-${pageNumber}.${extension}`,
+      alt: `${title} page ${index + 1}`,
+    };
+  });
+}
+
 const storyBooks = {
   magicalForest: {
     en: {
@@ -176,6 +201,17 @@ const storyBooks = {
     si: {
       title: "\u0db8\u0dd0\u0da2\u0dd2\u0d9a\u0dca \u0d9a\u0dd0\u0dbd\u0dda",
       embedSrc: "https://heyzine.com/flip-book/ec96fc83dc.html",
+    },
+  },
+  starStory: {
+    en: {
+      title: "Tikki's Library",
+      pageShape: "square",
+      pages: createImagePages("assets/tikkis-library-pages", "Tikki's Library", 18),
+    },
+    si: {
+      title: "\u0da7\u0dd2\u0d9a\u0dca\u0d9a\u0dd2\u0d9c\u0dda \u0db4\u0dd4\u0dc3\u0dca\u0dad\u0d9a\u0dcf\u0dbd\u0dba",
+      embedSrc: "https://heyzine.com/flip-book/9427c947da.html",
     },
   },
 };
@@ -336,6 +372,51 @@ const storyReaderMarkup = `
 
 document.body.insertAdjacentHTML("beforeend", storyReaderMarkup);
 
+const coloringMarkup = `
+  <div class="coloring-modal" id="coloringModal" aria-hidden="true">
+    <section class="coloring-box" role="dialog" aria-modal="true" aria-labelledby="coloringTitle">
+      <header class="coloring-header">
+        <h2 id="coloringTitle" data-i18n="coloringTitle">Colour the Characters</h2>
+        <button class="close-coloring" type="button" aria-label="Close coloring activity" data-i18n-aria-label="closeColoring">x</button>
+      </header>
+      <div class="coloring-tools">
+        <div class="coloring-sheet-picker" aria-label="Coloring pages">
+          <span data-i18n="coloringSheets">Pages</span>
+          <button class="sheet-choice active" type="button" data-sheet-src="assets/color-the-character.png" data-sheet-alt="MF 1 coloring sheet" data-sheet-download="mf-1-coloring.png" data-i18n="characterSheet">MF 1</button>
+          <button class="sheet-choice" type="button" data-sheet-src="assets/magical-forest-coloring.png" data-sheet-alt="MF 2 coloring sheet" data-sheet-download="mf-2-coloring.png" data-i18n="forestSheet">MF 2</button>
+          <button class="sheet-choice" type="button" data-sheet-src="assets/mf-3-coloring.png" data-sheet-alt="MF 3 coloring sheet" data-sheet-download="mf-3-coloring.png" data-i18n="forestSheetThree">MF 3</button>
+        </div>
+        <div class="coloring-tool-modes" aria-label="Tools">
+          <button class="tool-mode paint-mode active" type="button" data-tool="paint" aria-label="Paint" data-i18n-aria-label="paintTool" title="Paint"></button>
+          <button class="tool-mode eraser-mode" type="button" data-tool="eraser" aria-label="Eraser" data-i18n-aria-label="eraserTool" title="Eraser"></button>
+        </div>
+        <div class="coloring-palette" aria-label="Colors">
+          <span data-i18n="coloringPalette">Colors</span>
+          <button class="color-swatch active" type="button" data-color="#ef6393" aria-label="Pink"></button>
+          <button class="color-swatch" type="button" data-color="#f7b733" aria-label="Yellow"></button>
+          <button class="color-swatch" type="button" data-color="#6fcf97" aria-label="Green"></button>
+          <button class="color-swatch" type="button" data-color="#56ccf2" aria-label="Blue"></button>
+          <button class="color-swatch" type="button" data-color="#9b6bd3" aria-label="Purple"></button>
+          <button class="color-swatch" type="button" data-color="#f2994a" aria-label="Orange"></button>
+        </div>
+        <label class="brush-control">
+          <span data-i18n="brushSize">Brush Size</span>
+          <input id="brushSize" type="range" min="6" max="42" value="18">
+        </label>
+        <button class="btn btn-small btn-secondary" type="button" id="clearColoring" data-i18n="clearColoring">Clear</button>
+      </div>
+      <div class="coloring-page">
+        <div class="coloring-stage">
+          <img id="coloringSheetImage" src="assets/color-the-character.png" alt="Color the Character coloring sheet">
+          <canvas id="coloringCanvas" aria-label="Coloring canvas"></canvas>
+        </div>
+      </div>
+    </section>
+  </div>
+`;
+
+document.body.insertAdjacentHTML("beforeend", coloringMarkup);
+
 const loginModal = document.querySelector("#loginModal");
 const closeLogin = document.querySelector(".close-login");
 const storyReaderModal = document.querySelector("#storyReaderModal");
@@ -353,9 +434,26 @@ const bookPageCounter = document.querySelector("#bookPageCounter");
 const previousPageButton = document.querySelector(".page-nav-prev");
 const nextPageButton = document.querySelector(".page-nav-next");
 const storyOpenButtons = document.querySelectorAll("[data-story-open]");
+const coloringOpenButtons = document.querySelectorAll("[data-coloring-open]");
+const coloringModal = document.querySelector("#coloringModal");
+const closeColoring = document.querySelector(".close-coloring");
+const coloringSheetImage = document.querySelector("#coloringSheetImage");
+const coloringCanvas = document.querySelector("#coloringCanvas");
+const sheetChoiceButtons = document.querySelectorAll(".sheet-choice");
+const toolModeButtons = document.querySelectorAll(".tool-mode");
+const colorSwatches = document.querySelectorAll(".color-swatch");
+const brushSizeInput = document.querySelector("#brushSize");
+const clearColoringButton = document.querySelector("#clearColoring");
 let activeStory = null;
 let activePageIndex = 0;
 let isPageTurning = false;
+let activeColor = "#ef6393";
+let activeBrushSize = 18;
+let activeColoringTool = "paint";
+let activeSheetDownload = "color-the-character.png";
+let lastColoringPoint = null;
+let isColoring = false;
+let coloringContext = null;
 
 function setLoginOpen(isOpen) {
   loginModal.classList.toggle("open", isOpen);
@@ -369,6 +467,132 @@ function setStoryReaderOpen(isOpen) {
   if (!isOpen) {
     bookEmbed.src = "";
   }
+}
+
+function resizeColoringCanvas() {
+  const pageBox = coloringSheetImage.getBoundingClientRect();
+  const pixelRatio = window.devicePixelRatio || 1;
+
+  if (!pageBox.width || !pageBox.height) {
+    return;
+  }
+
+  coloringCanvas.width = Math.round(pageBox.width * pixelRatio);
+  coloringCanvas.height = Math.round(pageBox.height * pixelRatio);
+  coloringCanvas.style.width = `${pageBox.width}px`;
+  coloringCanvas.style.height = `${pageBox.height}px`;
+  coloringContext = coloringCanvas.getContext("2d");
+  coloringContext.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+  coloringContext.lineCap = "round";
+  coloringContext.lineJoin = "round";
+}
+
+function setColoringOpen(isOpen) {
+  coloringModal.classList.toggle("open", isOpen);
+  coloringModal.setAttribute("aria-hidden", String(!isOpen));
+
+  if (isOpen) {
+    requestAnimationFrame(resizeColoringCanvas);
+  }
+}
+
+function getColoringPoint(event) {
+  const canvasBox = coloringCanvas.getBoundingClientRect();
+
+  return {
+    x: event.clientX - canvasBox.left,
+    y: event.clientY - canvasBox.top,
+  };
+}
+
+function paintCircle(point) {
+  coloringContext.globalCompositeOperation = activeColoringTool === "eraser" ? "destination-out" : "source-over";
+  coloringContext.globalAlpha = activeColoringTool === "eraser" ? 1 : 0.72;
+  coloringContext.fillStyle = activeColor;
+  coloringContext.beginPath();
+  coloringContext.arc(point.x, point.y, activeBrushSize / 2, 0, Math.PI * 2);
+  coloringContext.fill();
+}
+
+function drawColoringStroke(fromPoint, toPoint) {
+  const distance = Math.hypot(toPoint.x - fromPoint.x, toPoint.y - fromPoint.y);
+  const steps = Math.max(1, Math.ceil(distance / Math.max(2, activeBrushSize / 3)));
+
+  for (let index = 1; index <= steps; index += 1) {
+    const progress = index / steps;
+    paintCircle({
+      x: fromPoint.x + (toPoint.x - fromPoint.x) * progress,
+      y: fromPoint.y + (toPoint.y - fromPoint.y) * progress,
+    });
+  }
+}
+
+function startColoring(event) {
+  if (!coloringContext) {
+    resizeColoringCanvas();
+  }
+
+  event.preventDefault();
+  isColoring = true;
+  coloringCanvas.setPointerCapture(event.pointerId);
+
+  const point = getColoringPoint(event);
+  lastColoringPoint = point;
+  paintCircle(point);
+}
+
+function continueColoring(event) {
+  if (!isColoring || !coloringContext) {
+    return;
+  }
+
+  event.preventDefault();
+  const point = getColoringPoint(event);
+  drawColoringStroke(lastColoringPoint || point, point);
+  lastColoringPoint = point;
+}
+
+function stopColoring(event) {
+  if (!isColoring) {
+    return;
+  }
+
+  isColoring = false;
+  lastColoringPoint = null;
+  coloringContext.globalCompositeOperation = "source-over";
+  coloringContext.globalAlpha = 1;
+
+  if (coloringCanvas.hasPointerCapture(event.pointerId)) {
+    coloringCanvas.releasePointerCapture(event.pointerId);
+  }
+}
+
+function clearColoring() {
+  if (!coloringContext) {
+    return;
+  }
+
+  const canvasBox = coloringCanvas.getBoundingClientRect();
+  coloringContext.globalCompositeOperation = "source-over";
+  coloringContext.globalAlpha = 1;
+  coloringContext.clearRect(0, 0, canvasBox.width, canvasBox.height);
+}
+
+function setActiveColoringTool(tool) {
+  activeColoringTool = tool === "eraser" ? "eraser" : "paint";
+  toolModeButtons.forEach((button) => {
+    button.classList.toggle("active", button.dataset.tool === activeColoringTool);
+  });
+}
+
+function setColoringSheet(button) {
+  coloringSheetImage.src = button.dataset.sheetSrc;
+  coloringSheetImage.alt = button.dataset.sheetAlt;
+  activeSheetDownload = button.dataset.sheetDownload || "coloring-page.png";
+  sheetChoiceButtons.forEach((sheetButton) => {
+    sheetButton.classList.toggle("active", sheetButton === button);
+  });
+  clearColoring();
 }
 
 function getActiveStoryContent() {
@@ -397,6 +621,7 @@ function updateStoryPage() {
   const isEmbeddedBook = Boolean(storyContent.embedSrc);
 
   storyReader.classList.toggle("embed-mode", isEmbeddedBook);
+  storyReader.classList.toggle("square-book", storyContent.pageShape === "square");
   storyReaderTitle.textContent = storyContent.title;
 
   if (isEmbeddedBook) {
@@ -499,6 +724,48 @@ closeStoryReader.addEventListener("click", () => setStoryReaderOpen(false));
 previousPageButton.addEventListener("click", () => changeStoryPage(-1));
 nextPageButton.addEventListener("click", () => changeStoryPage(1));
 
+coloringOpenButtons.forEach((button) => {
+  button.addEventListener("click", () => setColoringOpen(true));
+});
+
+closeColoring.addEventListener("click", () => setColoringOpen(false));
+clearColoringButton.addEventListener("click", clearColoring);
+brushSizeInput.addEventListener("input", (event) => {
+  activeBrushSize = Number(event.target.value);
+});
+
+toolModeButtons.forEach((button) => {
+  button.addEventListener("click", () => setActiveColoringTool(button.dataset.tool));
+});
+
+sheetChoiceButtons.forEach((button) => {
+  button.addEventListener("click", () => setColoringSheet(button));
+});
+
+colorSwatches.forEach((button) => {
+  button.addEventListener("click", () => {
+    activeColor = button.dataset.color;
+    setActiveColoringTool("paint");
+    colorSwatches.forEach((swatch) => swatch.classList.toggle("active", swatch === button));
+  });
+});
+
+coloringSheetImage.addEventListener("load", () => {
+  if (coloringModal.classList.contains("open")) {
+    resizeColoringCanvas();
+  }
+});
+
+coloringCanvas.addEventListener("pointerdown", startColoring);
+coloringCanvas.addEventListener("pointermove", continueColoring);
+coloringCanvas.addEventListener("pointerup", stopColoring);
+coloringCanvas.addEventListener("pointercancel", stopColoring);
+window.addEventListener("resize", () => {
+  if (coloringModal.classList.contains("open")) {
+    resizeColoringCanvas();
+  }
+});
+
 bookStage.addEventListener("click", (event) => {
   const pageBox = bookStage.getBoundingClientRect();
   const isRightHalf = event.clientX - pageBox.left > pageBox.width / 2;
@@ -515,6 +782,7 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     setLoginOpen(false);
     setStoryReaderOpen(false);
+    setColoringOpen(false);
   }
 
   if (!storyReaderModal.classList.contains("open")) {
