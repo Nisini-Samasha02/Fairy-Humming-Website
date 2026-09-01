@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun Quiz | Fairy Hummings by Nisini</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Bubblegum+Sans&family=Noto+Sans+Sinhala:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header compact-header">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="assets/site-logo.jpeg" alt="" aria-hidden="true">
+      <span class="brand-text">
+        <span class="brand-mark">Fairy Hummings</span>
+        <span class="brand-by">by Nisini</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html" data-i18n="navHome">Home</a>
+      <a href="stories.html" data-i18n="navStories">Stories</a>
+      <a class="active" href="activities.html" data-i18n="navActivities">Activities</a>
+      <a href="store.html" data-i18n="navStore">Store</a>
+      <a href="about.html" data-i18n="navAbout">About</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="header-actions">
+      <label class="language-label">
+        <span data-i18n="languageLabel">Language</span>
+        <select class="language-select" aria-label="Select language">
+          <option value="en">English</option>
+          <option value="si">සිංහල</option>
+        </select>
+      </label>
+      <a class="login-link" href="index.html#login" data-i18n="loginLink">Login / Sign Up</a>
+    </div>
+  </header>
+
+  <main class="page-shell quiz-page">
+    <section class="page-hero quiz-page-hero">
+      <p class="kicker" data-i18n="quizPageLead">Have fun while learning!</p>
+      <h1 data-i18n="availableQuizzes">📚 Available Story Quizzes</h1>
+      <p data-i18n="quizPageIntro">Pick your favorite story quiz and see how much you remember.</p>
+    </section>
+
+    <section class="quiz-page-grid" aria-label="Available story quizzes">
+      <article class="quiz-page-card">
+        <img src="assets/magical-forest-en.jpeg" alt="Magical Forest story cover">
+        <div class="quiz-page-card-content">
+          <h2 data-i18n="magicalForestQuiz">🌳 Magical Forest Quiz</h2>
+          <p data-i18n="magicalForestQuizDesc">Think you remember the Magical Forest adventure?</p>
+          <ul class="quiz-page-features">
+            <li data-i18n="fiveQuestions">✅ 5 Fun Questions</li>
+            <li data-i18n="easyForKids">⭐ Easy for Kids</li>
+            <li data-i18n="scoreAtEnd">🎁 Get Your Score at the End</li>
+          </ul>
+          <button class="btn" type="button" data-story-quiz="magicalForest" data-i18n="startQuiz">Start Quiz</button>
+        </div>
+      </article>
+
+      <article class="quiz-page-card">
+        <img src="assets/tikkis-library.png" alt="Tikki's Library story cover">
+        <div class="quiz-page-card-content">
+          <h2 data-i18n="tikkisLibraryQuiz">🐢 Tikki's Library Quiz</h2>
+          <p data-i18n="tikkisLibraryQuizDesc">How well do you know Tikki and his friends?</p>
+          <ul class="quiz-page-features">
+            <li data-i18n="fiveQuestions">✅ 5 Fun Questions</li>
+            <li data-i18n="easyForKids">⭐ Easy for Kids</li>
+            <li data-i18n="scoreAtEnd">🎁 Get Your Score at the End</li>
+          </ul>
+          <button class="btn" type="button" data-story-quiz="tikkisLibrary" data-i18n="startQuiz">Start Quiz</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div class="story-quiz-modal" id="tikkiQuizModal" aria-hidden="true">
+    <section class="story-quiz-box" role="dialog" aria-modal="true" aria-labelledby="tikkiQuizTitle">
+      <header class="story-quiz-header">
+        <div>
+          <p class="story-quiz-kicker">ටික්කිගේ පුස්තකාලය</p>
+          <h2 id="tikkiQuizTitle">ප්‍රශ්නාවලිය</h2>
+        </div>
+        <button class="close-story-quiz" type="button" aria-label="ප්‍රශ්නාවලිය වසන්න">&times;</button>
+      </header>
+
+      <div class="story-quiz-progress">
+        <span id="tikkiQuizProgress">ප්‍රශ්නය 1 / 5</span>
+        <span id="tikkiQuizRunningScore">ලකුණු: 0</span>
+      </div>
+
+      <div id="tikkiQuizQuestionView">
+        <h3 class="story-quiz-question" id="tikkiQuizQuestion"></h3>
+        <div class="story-quiz-options" id="tikkiQuizOptions" role="radiogroup" aria-labelledby="tikkiQuizQuestion"></div>
+        <p class="story-quiz-feedback" id="tikkiQuizFeedback" aria-live="polite"></p>
+        <button class="btn story-quiz-action" id="tikkiQuizAction" type="button" disabled>පිළිතුර බලන්න</button>
+      </div>
+
+      <div class="story-quiz-result" id="tikkiQuizResult" hidden>
+        <span class="story-quiz-result-star" aria-hidden="true">&#9733;</span>
+        <h3>ප්‍රශ්නාවලිය අවසන්!</h3>
+        <p id="tikkiQuizResultScore"></p>
+        <button class="btn" id="tikkiQuizRestart" type="button">නැවත කරන්න</button>
+      </div>
+    </section>
+  </div>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <div class="footer-intro">
+        <p class="footer-name">Fairy Hummings by Nisini</p>
+        <p class="footer-tagline"><strong>Every Story Plants a Dream.</strong></p>
+        <p class="footer-description">A magical space filled with children&rsquo;s stories, lovable characters, creativity, kindness, and meaningful adventures created to inspire little hearts and growing minds.</p>
+      </div>
+      <nav class="footer-navigation" aria-label="Footer navigation">
+        <p class="footer-links-title">Quick Links:</p>
+        <div class="footer-links">
+          <a href="index.html" data-i18n="navHome">Home</a>
+          <a href="stories.html" data-i18n="navStories">Stories</a>
+          <a href="activities.html" data-i18n="navActivities">Activities</a>
+          <a href="store.html" data-i18n="navStore">Store</a>
+          <a href="about.html" data-i18n="navAbout">About</a>
+        </div>
+      </nav>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fairy Hummings by Nisini. All Rights Reserved.</p>
+        <p>Created with love by <strong>Nisini Samasha</strong>.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
