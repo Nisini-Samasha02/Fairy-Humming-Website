@@ -4,7 +4,19 @@ const translations = {
     navHome: "Home",
     navStories: "Stories",
     navActivities: "Activities",
+    navStore: "Store",
     navAbout: "About",
+    storeKicker: "Fairy Hummings Shop",
+    storeTitle: "Storybook Store",
+    storeIntro: "Discover handmade little treasures created for playful imaginations.",
+    storeProductsLabel: "Store products",
+    octopusProductTitle: "Little Pipe Cleaner Octopus",
+    materialLabel: "Materials:",
+    octopusMaterial: "Pipe cleaners",
+    buyProduct: "Buy",
+    magicalForestBookTitle: "Magical Forest Storybook",
+    magicalForestBookLanguages: "Available in both Sinhala and English.",
+    magicalForestSalePriceLabel: "Original price Rs. 1,190, sale price Rs. 990",
     loginLink: "Login / Sign Up",
     homeKicker: "Magical tales for little hearts",
     homeTitle: "Every Story Plants a Dream.",
@@ -25,8 +37,13 @@ const translations = {
     homeAuthorTitle: "Hi! I'm Nisini.",
     homeAuthorDesc: "I create soft, happy stories that help children dream, learn, and grow with kindness.",
     learnMore: "Learn More",
-    featuredCharacters: "Featured Characters",
-    charactersTitle: "Friends Children Can Love",
+    readerGalleryKicker: "Art Gallery",
+    readerGalleryTitle: "Our Little Artists",
+    readerGalleryIntro: "A little gallery filled with imagination and joyful drawings.",
+    readerSlideshowLabel: "Little artists drawing gallery",
+    previousDrawing: "Previous drawing",
+    nextDrawing: "Next drawing",
+    chooseDrawing: "Show drawing",
     bunnyName: "Bunny Benny",
     bunnyDesc: "Brave, gentle, and always ready for adventure.",
     foxName: "Foxy Finn",
@@ -43,7 +60,7 @@ const translations = {
     starTitle: "Tikki's Library",
     starDesc: "A tiny star discovers how beautiful sharing light can be.",
     flowerTitle: "We are friends",
-    flowerDesc: "A flower blooms whenever Mila says something kind.",
+    flowerDesc: "A sweet underwater story about kindness, friendship, and helping each other.",
     activitiesKicker: "Play and Learn",
     activitiesTitle: "Activities for Little Hands",
     activitiesIntro: "Simple activities children can enjoy after each story.",
@@ -61,10 +78,23 @@ const translations = {
     brushSize: "Brush Size",
     clearColoring: "Clear",
     closeColoring: "Close coloring activity",
-    kindnessTitle: "Kindness Seed",
-    kindnessDesc: "Write one kind action and place it in a little paper flower.",
-    storyStarTitle: "Story Star",
-    storyStarDesc: "Pick a favorite part and tell it back in your own words.",
+    funQuizTitle: "Fun Quiz",
+    funQuizDesc: "Test your story memory with five fun questions.",
+    goToQuiz: "Go To Quiz",
+    quizPageLead: "Have fun while learning!",
+    quizPageIntro: "Pick your favorite story quiz and see how much you remember.",
+    availableQuizzes: "📚 Available Story Quizzes",
+    magicalForestQuiz: "🌳 Magical Forest Quiz",
+    magicalForestQuizDesc: "Think you remember the Magical Forest adventure?",
+    tikkisLibraryQuiz: "🐢 Tikki's Library Quiz",
+    tikkisLibraryQuizDesc: "How well do you know Tikki and his friends?",
+    fiveQuestions: "✅ 5 Fun Questions",
+    easyForKids: "⭐ Easy for Kids",
+    scoreAtEnd: "🎁 Get Your Score at the End",
+    startQuiz: "Start Quiz",
+    storyStarTitle: "Little Stars",
+    storyStarDesc: "Send us your artwork and let your creativity shine.",
+    sendArtwork: "Send",
     aboutKicker: "About the Author",
     aboutTitle: "Hi, I'm Nisini.",
     aboutIntro: "Fairy Hummings is a gentle place for children to discover magical stories, friendly characters, and small lessons about courage, kindness, and imagination.",
@@ -83,7 +113,19 @@ const translations = {
     navHome: "මුල් පිටුව",
     navStories: "කතා",
     navActivities: "ක්‍රියාකාරකම්",
+    navStore: "වෙළඳසැල",
     navAbout: "අප ගැන",
+    storeKicker: "Fairy Hummings වෙළඳසැල",
+    storeTitle: "කතා පොත් වෙළඳසැල",
+    storeIntro: "පුංචි පරිකල්පනාවන් සඳහා නිමවූ ආදරණීය අත්කම් සොයාගන්න.",
+    storeProductsLabel: "වෙළඳසැලේ නිෂ්පාදන",
+    octopusProductTitle: "පුංචි පයිප් ක්ලීනර් බූවල්ලා",
+    materialLabel: "ද්‍රව්‍ය:",
+    octopusMaterial: "පයිප් ක්ලීනර්",
+    buyProduct: "මිලදී ගන්න",
+    magicalForestBookTitle: "මැජික් කැලේ කතා පොත",
+    magicalForestBookLanguages: "සිංහල සහ ඉංග්‍රීසි භාෂා දෙකෙන්ම ලබාගත හැකියි.",
+    magicalForestSalePriceLabel: "පරණ මිල රු. 1,190යි, විශේෂ මිල රු. 990යි",
     loginLink: "ප්‍රවේශ වන්න / ලියාපදිංචි වන්න",
     homeKicker: "පුංචි හදවත් සඳහා මායාමය කතා",
     homeTitle: "සෑම කතාවක්ම සිහිනයක් රෝපණය කරයි.",
@@ -104,8 +146,13 @@ const translations = {
     homeAuthorTitle: "හායි! මම Nisini.",
     homeAuthorDesc: "දරුවන්ට සිහින දකින්න, ඉගෙන ගන්න, සහ කරුණාවෙන් වැඩෙන්න උපකාර කරන මෘදු සතුටු කතා මම නිර්මාණය කරමි.",
     learnMore: "තව දැනගන්න",
-    featuredCharacters: "විශේෂ චරිත",
-    charactersTitle: "දරුවන්ට ආදරය කළ හැකි මිතුරන්",
+    readerGalleryKicker: "චිත්‍ර ගැලරිය",
+    readerGalleryTitle: "අපේ පුංචි චිත්‍ර ශිල්පියෝ",
+    readerGalleryIntro: "පරිකල්පනයෙන් සහ සතුටු සිතුවම්වලින් පිරුණු පුංචි ගැලරියක්.",
+    readerSlideshowLabel: "පුංචි චිත්‍ර ශිල්පීන්ගේ චිත්‍ර ගැලරිය",
+    previousDrawing: "පෙර චිත්‍රය",
+    nextDrawing: "ඊළඟ චිත්‍රය",
+    chooseDrawing: "චිත්‍රය පෙන්වන්න",
     bunnyName: "Bunny Benny",
     bunnyDesc: "නිර්භීත, මෘදු, සහ සෑම විටම වික්‍රමයකට සූදානම්.",
     foxName: "Foxy Finn",
@@ -121,15 +168,15 @@ const translations = {
     storyRabbitCardDesc: "මැජික් කැලේ තුළින් පුදුමය, මිත්‍රත්වය, සහ පරිකල්පනය පිරුණු ලෝකයක් විවෘත වේ.",
     starTitle: "\u0da7\u0dd2\u0d9a\u0dca\u0d9a\u0dd2\u0d9c\u0dda \u0db4\u0dd4\u0dc3\u0dca\u0dad\u0d9a\u0dcf\u0dbd\u0dba",
     starDesc: "ආලෝකය බෙදාගැනීම කොතරම් ලස්සනදැයි පුංචි තරුවක් සොයා ගනී.",
-    flowerTitle: "Milaගේ මායාමය මල",
-    flowerDesc: "Mila කරුණාවන්ත දෙයක් කියන සෑම විටම මලක් පිපෙයි.",
+    flowerTitle: "අපි යාලුවෝ",
+    flowerDesc: "කරුණාව, මිත්‍රත්වය, සහ එකිනෙකාට උදව් කිරීම ගැන ලස්සන දිය යට කතාවක්.",
     activitiesKicker: "සෙල්ලම් කර ඉගෙන ගන්න",
     activitiesTitle: "පුංචි අත් සඳහා ක්‍රියාකාරකම්",
     activitiesIntro: "සෑම කතාවකට පසුවම දරුවන්ට රසවිඳිය හැකි සරල ක්‍රියාකාරකම්.",
-    colorTitle: "Colour the Characters",
+    colorTitle: "පාට කරන්න",
     colorDesc: "සුරංගනා coloring page එක විවෘත කර සතුටු වර්ණ වලින් පුරවන්න.",
     openColoring: "වර්ණ දමන්න",
-    coloringTitle: "Colour the Characters",
+    coloringTitle: "පාට කරන්න",
     coloringSheets: "Pages",
     characterSheet: "MF 1",
     forestSheet: "MF 2",
@@ -140,10 +187,23 @@ const translations = {
     brushSize: "Brush ප්‍රමාණය",
     clearColoring: "මකන්න",
     closeColoring: "වර්ණ ක්‍රියාකාරකම වසන්න",
-    kindnessTitle: "කරුණාවේ බීජය",
-    kindnessDesc: "කරුණාවන්ත ක්‍රියාවක් ලියා, පුංචි කඩදාසි මලක තබන්න.",
-    storyStarTitle: "කතා තරුව",
-    storyStarDesc: "කතාවේ කැමතිම කොටස තෝරා, ඔබේම වචන වලින් නැවත කියන්න.",
+    funQuizTitle: "විනෝද ප්‍රශ්නාවලිය",
+    funQuizDesc: "විනෝදජනක ප්‍රශ්න පහකින් ඔබේ කතා මතකය පරීක්ෂා කරන්න.",
+    goToQuiz: "ප්‍රශ්නාවලියට යන්න",
+    quizPageLead: "ඉගෙන ගන්නා අතරතුර සතුටු වන්න!",
+    quizPageIntro: "ඔබ කැමති කතා ප්‍රශ්නාවලිය තෝරා, කතාව කොතරම් මතකදැයි බලන්න.",
+    availableQuizzes: "📚 ලබා ගත හැකි කතා ප්‍රශ්නාවලි",
+    magicalForestQuiz: "🌳 මැජික් කැලේ ප්‍රශ්නාවලිය",
+    magicalForestQuizDesc: "මැජික් කැලේ වික්‍රමය ඔබට මතකද?",
+    tikkisLibraryQuiz: "🐢 ටික්කිගේ පුස්තකාලය ප්‍රශ්නාවලිය",
+    tikkisLibraryQuizDesc: "ටික්කි සහ ඇගේ මිතුරන් ගැන ඔබ කොතරම් දන්නවාද?",
+    fiveQuestions: "✅ විනෝදජනක ප්‍රශ්න 5ක්",
+    easyForKids: "⭐ දරුවන්ට පහසුයි",
+    scoreAtEnd: "🎁 අවසානයේ ඔබේ ලකුණු බලන්න",
+    startQuiz: "ප්‍රශ්නාවලිය අරඹන්න",
+    storyStarTitle: "පුංචි තරු",
+    storyStarDesc: "ඔයාලගේ චිත්‍ර අපට එවලා නිර්මාණශීලීත්වය බැබළෙන්න දෙන්න.",
+    sendArtwork: "එවන්න",
     aboutKicker: "කතුවරිය ගැන",
     aboutTitle: "හායි, මම Nisini.",
     aboutIntro: "Fairy Hummings යනු දරුවන්ට මායාමය කතා, හිතවත් චරිත, සහ ධෛර්යය, කරුණාව, පරිකල්පනය පිළිබඳ පුංචි පාඩම් සොයාගැනීමට ඇති මෘදු තැනකි.",
@@ -164,12 +224,16 @@ const pageTitles = {
     "index.html": "Fairy Hummings by Nisini",
     "stories.html": "Stories | Fairy Hummings by Nisini",
     "activities.html": "Activities | Fairy Hummings by Nisini",
+    "quiz.html": "Fun Quiz | Fairy Hummings by Nisini",
+    "store.html": "Store | Fairy Hummings by Nisini",
     "about.html": "About | Fairy Hummings by Nisini",
   },
   si: {
     "index.html": "Fairy Hummings by Nisini",
     "stories.html": "කතා | Fairy Hummings by Nisini",
     "activities.html": "ක්‍රියාකාරකම් | Fairy Hummings by Nisini",
+    "quiz.html": "විනෝද ප්‍රශ්නාවලිය | Fairy Hummings by Nisini",
+    "store.html": "වෙළඳසැල | Fairy Hummings by Nisini",
     "about.html": "අප ගැන | Fairy Hummings by Nisini",
   },
 };
@@ -197,21 +261,34 @@ const storyBooks = {
     en: {
       title: "Magical forest",
       embedSrc: "https://heyzine.com/flip-book/8e280803f9.html",
+      audioSrc: "assets/magical-forest-english.m4a",
+      audioTitle: "Magical Forest audio book",
     },
     si: {
       title: "\u0db8\u0dd0\u0da2\u0dd2\u0d9a\u0dca \u0d9a\u0dd0\u0dbd\u0dda",
       embedSrc: "https://heyzine.com/flip-book/ec96fc83dc.html",
+      audioSrc: "assets/magic-kale-sinhala.m4a",
+      audioTitle: "\u0db8\u0dd0\u0da2\u0dd2\u0d9a\u0dca \u0d9a\u0dd0\u0dbd\u0dda audio book",
     },
   },
   starStory: {
     en: {
       title: "Tikki's Library",
-      pageShape: "square",
-      pages: createImagePages("assets/tikkis-library-pages", "Tikki's Library", 18),
+      embedSrc: "https://heyzine.com/flip-book/9427c947da.html",
     },
     si: {
       title: "\u0da7\u0dd2\u0d9a\u0dca\u0d9a\u0dd2\u0d9c\u0dda \u0db4\u0dd4\u0dc3\u0dca\u0dad\u0d9a\u0dcf\u0dbd\u0dba",
-      embedSrc: "https://heyzine.com/flip-book/9427c947da.html",
+      embedSrc: "https://heyzine.com/flip-book/5fbe2c40d1.html",
+    },
+  },
+  sinhalaThirdStory: {
+    en: {
+      title: "We are friends",
+      embedSrc: "https://online.fliphtml5.com/semdby/We-are-friends/",
+    },
+    si: {
+      title: "\u0d85\u0db4\u0dd2 \u0dba\u0dcf\u0dbd\u0dd4\u0dc0\u0ddd",
+      embedSrc: "https://online.fliphtml5.com/semdby/guep/",
     },
   },
 };
@@ -292,6 +369,7 @@ function setLanguage(language) {
     activePageIndex = 0;
     updateStoryPage();
   }
+
 }
 
 if (navToggle && mainNav) {
@@ -365,6 +443,10 @@ const storyReaderMarkup = `
       </div>
       <footer class="story-reader-footer">
         <span id="bookPageCounter">Page 1 of 1</span>
+        <div class="story-audio-player" id="storyAudioPlayer" hidden>
+          <span id="storyAudioLabel">Audio book</span>
+          <audio id="storyAudio" controls preload="metadata"></audio>
+        </div>
       </footer>
     </section>
   </div>
@@ -431,6 +513,9 @@ const pageFlipper = document.querySelector("#pageFlipper");
 const flipFrontImage = document.querySelector("#flipFrontImage");
 const flipBackImage = document.querySelector("#flipBackImage");
 const bookPageCounter = document.querySelector("#bookPageCounter");
+const storyAudioPlayer = document.querySelector("#storyAudioPlayer");
+const storyAudioLabel = document.querySelector("#storyAudioLabel");
+const storyAudio = document.querySelector("#storyAudio");
 const previousPageButton = document.querySelector(".page-nav-prev");
 const nextPageButton = document.querySelector(".page-nav-next");
 const storyOpenButtons = document.querySelectorAll("[data-story-open]");
@@ -466,6 +551,9 @@ function setStoryReaderOpen(isOpen) {
 
   if (!isOpen) {
     bookEmbed.src = "";
+    storyAudio.pause();
+    storyAudio.removeAttribute("src");
+    storyAudio.load();
   }
 }
 
@@ -600,7 +688,19 @@ function getActiveStoryContent() {
     return null;
   }
 
-  return activeStory[currentLanguage] || activeStory.en || activeStory;
+  if (activeStory[currentLanguage]) {
+    return activeStory[currentLanguage];
+  }
+
+  if (activeStory.en) {
+    return activeStory.en;
+  }
+
+  if (activeStory.embedSrc || activeStory.pages) {
+    return activeStory;
+  }
+
+  return null;
 }
 
 function setPageControls() {
@@ -619,10 +719,26 @@ function updateStoryPage() {
   }
 
   const isEmbeddedBook = Boolean(storyContent.embedSrc);
+  const hasAudioBook = Boolean(storyContent.audioSrc);
 
   storyReader.classList.toggle("embed-mode", isEmbeddedBook);
+  storyReader.classList.toggle("has-audio", hasAudioBook);
   storyReader.classList.toggle("square-book", storyContent.pageShape === "square");
   storyReaderTitle.textContent = storyContent.title;
+  storyAudioPlayer.hidden = !hasAudioBook;
+
+  if (hasAudioBook) {
+    storyAudioLabel.textContent = storyContent.audioTitle || `${storyContent.title} audio book`;
+
+    if (storyAudio.getAttribute("src") !== storyContent.audioSrc) {
+      storyAudio.src = storyContent.audioSrc;
+      storyAudio.load();
+    }
+  } else {
+    storyAudio.pause();
+    storyAudio.removeAttribute("src");
+    storyAudio.load();
+  }
 
   if (isEmbeddedBook) {
     bookEmbed.src = storyContent.embedSrc;
@@ -646,6 +762,10 @@ function openStoryBook(storyKey) {
   activeStory = storyBooks[storyKey];
 
   if (!activeStory) {
+    return;
+  }
+
+  if (!getActiveStoryContent()) {
     return;
   }
 
@@ -797,5 +917,482 @@ document.addEventListener("keydown", (event) => {
     changeStoryPage(1);
   }
 });
+
+const readerSlideshow = document.querySelector("#readerSlideshow");
+
+if (readerSlideshow) {
+  const readerSlides = Array.from(readerSlideshow.querySelectorAll(".reader-slide"));
+  const readerSlideDots = readerSlideshow.querySelector("#readerSlideDots");
+  const previousReaderSlide = readerSlideshow.querySelector(".reader-slide-prev");
+  const nextReaderSlide = readerSlideshow.querySelector(".reader-slide-next");
+  const readerSlideInterval = 30000;
+  let activeReaderSlide = 0;
+  let readerSlideTimer;
+
+  function showReaderSlide(index) {
+    activeReaderSlide = (index + readerSlides.length) % readerSlides.length;
+    readerSlides.forEach((slide, slideIndex) => {
+      const isActive = slideIndex === activeReaderSlide;
+
+      slide.classList.toggle("active", isActive);
+      slide.setAttribute("aria-hidden", String(!isActive));
+    });
+
+    readerSlideDots.querySelectorAll("button").forEach((dot, dotIndex) => {
+      const isActive = dotIndex === activeReaderSlide;
+
+      dot.classList.toggle("active", isActive);
+      dot.setAttribute("aria-current", isActive ? "true" : "false");
+    });
+  }
+
+  function restartReaderSlideshow() {
+    window.clearInterval(readerSlideTimer);
+    readerSlideTimer = window.setInterval(() => {
+      showReaderSlide(activeReaderSlide + 1);
+    }, readerSlideInterval);
+  }
+
+  readerSlides.forEach((slide, index) => {
+    const dot = document.createElement("button");
+
+    dot.type = "button";
+    dot.setAttribute("aria-label", `${translations[currentLanguage].chooseDrawing} ${index + 1}`);
+    dot.addEventListener("click", () => {
+      showReaderSlide(index);
+      restartReaderSlideshow();
+    });
+    readerSlideDots.append(dot);
+  });
+
+  previousReaderSlide.addEventListener("click", () => {
+    showReaderSlide(activeReaderSlide - 1);
+    restartReaderSlideshow();
+  });
+
+  nextReaderSlide.addEventListener("click", () => {
+    showReaderSlide(activeReaderSlide + 1);
+    restartReaderSlideshow();
+  });
+
+  languageSelects.forEach((select) => {
+    select.addEventListener("change", () => {
+      const copy = translations[currentLanguage] || translations.en;
+
+      readerSlideDots.querySelectorAll("button").forEach((dot, index) => {
+        dot.setAttribute("aria-label", `${copy.chooseDrawing} ${index + 1}`);
+      });
+    });
+  });
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      window.clearInterval(readerSlideTimer);
+    } else {
+      restartReaderSlideshow();
+    }
+  });
+
+  showReaderSlide(0);
+  restartReaderSlideshow();
+}
+
+const tikkiQuizStartButton = document.querySelector('[data-story-quiz="tikkisLibrary"]');
+const magicalQuizStartButton = document.querySelector('[data-story-quiz="magicalForest"]');
+const tikkiQuizModal = document.querySelector("#tikkiQuizModal");
+
+if (tikkiQuizStartButton && magicalQuizStartButton && tikkiQuizModal) {
+  const magicalQuizContent = {
+    en: {
+      storyTitle: "The Magical Forest",
+      quizTitle: "Quiz",
+      closeLabel: "Close quiz",
+      questionLabel: "Question",
+      scoreLabel: "Score",
+      checkAnswer: "Check Answer",
+      nextQuestion: "Next Question",
+      viewScore: "View Score",
+      correctFeedback: "Correct!",
+      wrongFeedback: "Not quite. The correct answer is highlighted in green.",
+      resultTitle: "Quiz Complete!",
+      resultText: (score, total) => `You answered ${score} out of ${total} questions correctly.`,
+      restart: "Try Again",
+      questions: [
+        {
+          question: "1. Who protected the Magical Forest?",
+          options: ["A king 👑", "A fairy 🧚‍♀️", "A rabbit 🐰", "A bird 🐦"],
+          correctAnswer: 1
+        },
+        {
+          question: "2. What did the villagers want to own?",
+          options: ["A castle 🏰", "A river 🌊", "The forest 🌳", "A mountain ⛰️"],
+          correctAnswer: 2
+        },
+        {
+          question: "3. What magical power did the mushroom friends receive?",
+          options: [
+            "They could fly. 🦋",
+            "They had a strong poisonous smell. 🍄",
+            "They could swim fast. 🐟",
+            "They became invisible. 👻"
+          ],
+          correctAnswer: 1
+        },
+        {
+          question: "4. What did the villagers say when they returned to the forest?",
+          options: [
+            "\"We will cut more trees!\" 🌳",
+            "\"We are truly sorry. Please forgive us.\" ❤️",
+            "\"This forest is ours!\"",
+            "\"Goodbye!\" 👋"
+          ],
+          correctAnswer: 1
+        },
+        {
+          question: "5. What lesson did everyone learn at the end of the story?",
+          options: [
+            "Share your toys. 🧸",
+            "Eat more vegetables. 🥕",
+            "Love and protect nature. 🌿",
+            "Sleep early every day. 😴"
+          ],
+          correctAnswer: 2
+        }
+      ]
+    },
+    si: {
+      storyTitle: "මැජික් කැලේ",
+      quizTitle: "ප්‍රශ්නාවලිය",
+      closeLabel: "ප්‍රශ්නාවලිය වසන්න",
+      questionLabel: "ප්‍රශ්නය",
+      scoreLabel: "ලකුණු",
+      checkAnswer: "පිළිතුර බලන්න",
+      nextQuestion: "ඊළඟ ප්‍රශ්නය",
+      viewScore: "ලකුණු බලන්න",
+      correctFeedback: "නිවැරදියි!",
+      wrongFeedback: "වැරදියි. නිවැරදි පිළිතුර කොළ පැහැයෙන් පෙන්වා ඇත.",
+      resultTitle: "ප්‍රශ්නාවලිය අවසන්!",
+      resultText: (score, total) => `ඔබ ප්‍රශ්න ${total}න් ${score}කට නිවැරදිව පිළිතුරු දුන්නා.`,
+      restart: "නැවත කරන්න",
+      questions: [
+        {
+          question: "1. මැජික් කැලේ ආරක්ෂා කළේ කවුද?",
+          options: ["රජෙක් 👑", "සුරංගනාවියක් 🧚‍♀️", "හාවෙක් 🐰", "කුරුල්ලෙක් 🐦"],
+          correctAnswer: 1
+        },
+        {
+          question: "2. ගම්වැසියන්ට අයිති කරගන්න ඕනෑ වුණේ කුමක්ද?",
+          options: ["මාලිගාවක් 🏰", "ගංගාවක් 🌊", "කැලෑව 🌳", "කන්දක් ⛰️"],
+          correctAnswer: 2
+        },
+        {
+          question: "3. හතු යහළුවන්ට ලැබුණේ කුමන මැජික් බලයක්ද?",
+          options: [
+            "ඔවුන්ට පියාසර කළ හැකි වුණා. 🦋",
+            "ඔවුන්ට තද විෂ සහිත ගඳක් තිබුණා. 🍄",
+            "ඔවුන්ට වේගයෙන් පිහිනීමට හැකි වුණා. 🐟",
+            "ඔවුන් නොපෙනෙන බවට පත් වුණා. 👻"
+          ],
+          correctAnswer: 1
+        },
+        {
+          question: "4. ගම්වැසියන් නැවත කැලයට පැමිණි විට කීවේ කුමක්ද?",
+          options: [
+            "\"අපි තවත් ගස් කපනවා!\" 🌳",
+            "\"අපට ඇත්තටම කනගාටුයි. කරුණාකර අපට සමාව දෙන්න.\" ❤️",
+            "\"මේ කැලෑව අපේ!\"",
+            "\"ආයුබෝවන්!\" 👋"
+          ],
+          correctAnswer: 1
+        },
+        {
+          question: "5. කතාව අවසානයේදී හැමෝම ඉගෙනගත් පාඩම කුමක්ද?",
+          options: [
+            "ඔබේ සෙල්ලම් බඩු බෙදාගන්න. 🧸",
+            "වැඩිපුර එළවළු කන්න. 🥕",
+            "සොබාදහමට ආදරය කර එය ආරක්ෂා කරන්න. 🌿",
+            "සෑම දිනකම වේලාසනින් නිදාගන්න. 😴"
+          ],
+          correctAnswer: 2
+        }
+      ]
+    }
+  };
+  const tikkiQuizContent = {
+    en: {
+      storyTitle: "Tikki's Library",
+      quizTitle: "Quiz",
+      closeLabel: "Close quiz",
+      questionLabel: "Question",
+      scoreLabel: "Score",
+      checkAnswer: "Check Answer",
+      nextQuestion: "Next Question",
+      viewScore: "View Score",
+      correctFeedback: "Correct!",
+      wrongFeedback: "Not quite. The correct answer is highlighted in green.",
+      resultTitle: "Quiz Complete!",
+      resultText: (score, total) => `You answered ${score} out of ${total} questions correctly.`,
+      restart: "Try Again",
+      questions: [
+        {
+          question: "1. Who is the main character in the story?",
+          options: ["The rabbit", "Tikki the tortoise", "The mouse", "The elephant"],
+          correctAnswer: 1
+        },
+        {
+          question: "2. What did Tikki want to build?",
+          options: ["A chair", "A flower", "A library", "A house"],
+          correctAnswer: 2
+        },
+        {
+          question: "3. What did the rabbit create?",
+          options: ["A stone cup", "A flower pot", "A book", "A birdhouse"],
+          correctAnswer: 1
+        },
+        {
+          question: "4. What did the elephant create?",
+          options: ["A chair", "A stone cup", "A flower pot", "A bookshelf"],
+          correctAnswer: 0
+        },
+        {
+          question: "5. What good lesson do we learn from the story?",
+          options: [
+            "Work alone.",
+            "Compete with others.",
+            "It is important to work together and creatively.",
+            "Do not help anyone."
+          ],
+          correctAnswer: 2
+        }
+      ]
+    },
+    si: {
+      storyTitle: "ටික්කිගේ පුස්තකාලය",
+      quizTitle: "ප්‍රශ්නාවලිය",
+      closeLabel: "ප්‍රශ්නාවලිය වසන්න",
+      questionLabel: "ප්‍රශ්නය",
+      scoreLabel: "ලකුණු",
+      checkAnswer: "පිළිතුර බලන්න",
+      nextQuestion: "ඊළඟ ප්‍රශ්නය",
+      viewScore: "ලකුණු බලන්න",
+      correctFeedback: "නිවැරදියි!",
+      wrongFeedback: "වැරදියි. නිවැරදි පිළිතුර කොළ පැහැයෙන් පෙන්වා ඇත.",
+      resultTitle: "ප්‍රශ්නාවලිය අවසන්!",
+      resultText: (score, total) => `ඔබ ප්‍රශ්න ${total}න් ${score}කට නිවැරදිව පිළිතුරු දුන්නා.`,
+      restart: "නැවත කරන්න",
+      questions: [
+        {
+          question: "1. කතාවේ ප්‍රධාන චරිතය කවුද?",
+          options: ["හාවා", "ටික්කි ඉබ්බා", "මීයා", "අලියා"],
+          correctAnswer: 1
+        },
+        {
+          question: "2. ටික්කි හදන්න කැමති වුණේ මොකක්ද?",
+          options: ["පුටුවක්", "මලක්", "පුස්තකාලයක්", "ගෙයක්"],
+          correctAnswer: 2
+        },
+        {
+          question: "3. හාවා නිර්මාණය කළේ මොනවාද?",
+          options: ["ගල් කෝප්පයක්", "මල් පෝච්චියක්", "පොතක්", "කුරුලු කූඩුවක්"],
+          correctAnswer: 1
+        },
+        {
+          question: "4. අලියා නිර්මාණය කළේ මොනවාද?",
+          options: ["පුටුවක්", "ගල් කෝප්පයක්", "මල් පෝච්චියක්", "පොත් රාක්කයක්"],
+          correctAnswer: 0
+        },
+        {
+          question: "5. කතාවෙන් අපි ඉගෙන ගන්න හොඳ පාඩම කුමක්ද?",
+          options: [
+            "තනියම වැඩ කරන්න.",
+            "අනිත් අය සමඟ තරඟ කරන්න.",
+            "එකමුතුවෙන් සහ නිර්මාණශීලීව වැඩ කිරීම වැදගත්ය.",
+            "කිසිවෙකුට උදව් නොකරන්න."
+          ],
+          correctAnswer: 2
+        }
+      ]
+    }
+  };
+  const closeTikkiQuizButton = tikkiQuizModal.querySelector(".close-story-quiz");
+  const tikkiQuizStoryTitle = tikkiQuizModal.querySelector(".story-quiz-kicker");
+  const tikkiQuizTitle = tikkiQuizModal.querySelector("#tikkiQuizTitle");
+  const tikkiQuizProgress = tikkiQuizModal.querySelector("#tikkiQuizProgress");
+  const tikkiQuizRunningScore = tikkiQuizModal.querySelector("#tikkiQuizRunningScore");
+  const tikkiQuizQuestionView = tikkiQuizModal.querySelector("#tikkiQuizQuestionView");
+  const tikkiQuizQuestion = tikkiQuizModal.querySelector("#tikkiQuizQuestion");
+  const tikkiQuizOptions = tikkiQuizModal.querySelector("#tikkiQuizOptions");
+  const tikkiQuizFeedback = tikkiQuizModal.querySelector("#tikkiQuizFeedback");
+  const tikkiQuizAction = tikkiQuizModal.querySelector("#tikkiQuizAction");
+  const tikkiQuizResult = tikkiQuizModal.querySelector("#tikkiQuizResult");
+  const tikkiQuizResultTitle = tikkiQuizResult.querySelector("h3");
+  const tikkiQuizResultScore = tikkiQuizModal.querySelector("#tikkiQuizResultScore");
+  const tikkiQuizRestart = tikkiQuizModal.querySelector("#tikkiQuizRestart");
+  let tikkiQuestionIndex = 0;
+  let tikkiScore = 0;
+  let selectedTikkiAnswer = null;
+  let tikkiAnswerChecked = false;
+  let activeQuizContent = tikkiQuizContent;
+
+  function getTikkiQuizContent() {
+    return activeQuizContent[currentLanguage] || activeQuizContent.en;
+  }
+
+  function updateTikkiQuizLabels() {
+    const content = getTikkiQuizContent();
+
+    tikkiQuizStoryTitle.textContent = content.storyTitle;
+    tikkiQuizTitle.textContent = content.quizTitle;
+    closeTikkiQuizButton.setAttribute("aria-label", content.closeLabel);
+    tikkiQuizResultTitle.textContent = content.resultTitle;
+    tikkiQuizRestart.textContent = content.restart;
+  }
+
+  function setTikkiQuizOpen(isOpen) {
+    tikkiQuizModal.classList.toggle("open", isOpen);
+    tikkiQuizModal.setAttribute("aria-hidden", String(!isOpen));
+    document.body.classList.toggle("modal-open", isOpen);
+
+    if (isOpen) {
+      closeTikkiQuizButton.focus();
+    }
+  }
+
+  function renderTikkiQuestion() {
+    const content = getTikkiQuizContent();
+    const currentQuestion = content.questions[tikkiQuestionIndex];
+    const answerLetters = ["A", "B", "C", "D"];
+
+    updateTikkiQuizLabels();
+    selectedTikkiAnswer = null;
+    tikkiAnswerChecked = false;
+    tikkiQuizQuestion.textContent = currentQuestion.question;
+    tikkiQuizProgress.textContent = `${content.questionLabel} ${tikkiQuestionIndex + 1} / ${content.questions.length}`;
+    tikkiQuizRunningScore.textContent = `${content.scoreLabel}: ${tikkiScore}`;
+    tikkiQuizFeedback.textContent = "";
+    tikkiQuizFeedback.className = "story-quiz-feedback";
+    tikkiQuizAction.textContent = content.checkAnswer;
+    tikkiQuizAction.disabled = true;
+    tikkiQuizOptions.replaceChildren();
+
+    currentQuestion.options.forEach((option, optionIndex) => {
+      const label = document.createElement("label");
+      const input = document.createElement("input");
+      const letter = document.createElement("span");
+      const text = document.createElement("span");
+
+      label.className = "story-quiz-option";
+      label.dataset.optionIndex = optionIndex;
+      input.type = "radio";
+      input.name = "tikkiQuizAnswer";
+      input.value = optionIndex;
+      letter.className = "story-quiz-option-letter";
+      letter.textContent = answerLetters[optionIndex];
+      text.textContent = option;
+
+      input.addEventListener("change", () => {
+        selectedTikkiAnswer = optionIndex;
+        tikkiQuizAction.disabled = false;
+        tikkiQuizOptions.querySelectorAll(".story-quiz-option").forEach((answer) => {
+          answer.classList.toggle("selected", answer === label);
+        });
+      });
+
+      label.append(input, letter, text);
+      tikkiQuizOptions.append(label);
+    });
+  }
+
+  function startStoryQuiz(quizContent = activeQuizContent) {
+    activeQuizContent = quizContent;
+    tikkiQuestionIndex = 0;
+    tikkiScore = 0;
+    tikkiQuizQuestionView.hidden = false;
+    tikkiQuizResult.hidden = true;
+    renderTikkiQuestion();
+    setTikkiQuizOpen(true);
+  }
+
+  function checkTikkiAnswer() {
+    if (selectedTikkiAnswer === null) {
+      return;
+    }
+
+    const content = getTikkiQuizContent();
+    const currentQuestion = content.questions[tikkiQuestionIndex];
+    const options = tikkiQuizOptions.querySelectorAll(".story-quiz-option");
+    const isCorrect = selectedTikkiAnswer === currentQuestion.correctAnswer;
+
+    tikkiAnswerChecked = true;
+    options.forEach((option, optionIndex) => {
+      option.querySelector("input").disabled = true;
+      option.classList.toggle("correct", optionIndex === currentQuestion.correctAnswer);
+      option.classList.toggle("wrong", optionIndex === selectedTikkiAnswer && !isCorrect);
+    });
+
+    if (isCorrect) {
+      tikkiScore += 1;
+      tikkiQuizFeedback.textContent = content.correctFeedback;
+      tikkiQuizFeedback.classList.add("is-correct");
+    } else {
+      tikkiQuizFeedback.textContent = content.wrongFeedback;
+      tikkiQuizFeedback.classList.add("is-wrong");
+    }
+
+    tikkiQuizRunningScore.textContent = `${content.scoreLabel}: ${tikkiScore}`;
+    tikkiQuizAction.textContent = tikkiQuestionIndex === content.questions.length - 1
+      ? content.viewScore
+      : content.nextQuestion;
+  }
+
+  function showTikkiResult() {
+    const content = getTikkiQuizContent();
+
+    updateTikkiQuizLabels();
+    tikkiQuizQuestionView.hidden = true;
+    tikkiQuizResult.hidden = false;
+    tikkiQuizResultScore.textContent = content.resultText(tikkiScore, content.questions.length);
+    tikkiQuizRestart.focus();
+  }
+
+  tikkiQuizStartButton.addEventListener("click", () => startStoryQuiz(tikkiQuizContent));
+  magicalQuizStartButton.addEventListener("click", () => startStoryQuiz(magicalQuizContent));
+  closeTikkiQuizButton.addEventListener("click", () => setTikkiQuizOpen(false));
+  tikkiQuizRestart.addEventListener("click", () => startStoryQuiz());
+  tikkiQuizAction.addEventListener("click", () => {
+    if (!tikkiAnswerChecked) {
+      checkTikkiAnswer();
+      return;
+    }
+
+    if (tikkiQuestionIndex === getTikkiQuizContent().questions.length - 1) {
+      showTikkiResult();
+      return;
+    }
+
+    tikkiQuestionIndex += 1;
+    renderTikkiQuestion();
+  });
+
+  tikkiQuizModal.addEventListener("click", (event) => {
+    if (event.target === tikkiQuizModal) {
+      setTikkiQuizOpen(false);
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && tikkiQuizModal.classList.contains("open")) {
+      setTikkiQuizOpen(false);
+    }
+  });
+
+  languageSelects.forEach((select) => {
+    select.addEventListener("change", () => {
+      if (tikkiQuizModal.classList.contains("open")) {
+        startStoryQuiz();
+      }
+    });
+  });
+}
 
 applyTranslations(currentLanguage);

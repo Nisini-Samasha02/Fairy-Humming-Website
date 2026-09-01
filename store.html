@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Activities | Fairy Hummings by Nisini</title>
+  <title>Store | Fairy Hummings by Nisini</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Bubblegum+Sans&family=Noto+Sans+Sinhala:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
@@ -22,8 +22,8 @@
     <nav class="main-nav" aria-label="Main navigation">
       <a href="index.html" data-i18n="navHome">Home</a>
       <a href="stories.html" data-i18n="navStories">Stories</a>
-      <a class="active" href="activities.html" data-i18n="navActivities">Activities</a>
-      <a href="store.html" data-i18n="navStore">Store</a>
+      <a href="activities.html" data-i18n="navActivities">Activities</a>
+      <a class="active" href="store.html" data-i18n="navStore">Store</a>
       <a href="about.html" data-i18n="navAbout">About</a>
     </nav>
     <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -41,29 +41,37 @@
 
   <main class="page-shell">
     <section class="page-hero">
-      <p class="kicker" data-i18n="activitiesKicker">Play and Learn</p>
-      <h1 data-i18n="activitiesTitle">Activities for Little Hands</h1>
-      <p data-i18n="activitiesIntro">Simple activities children can enjoy after each story.</p>
+      <p class="kicker" data-i18n="storeKicker">Fairy Hummings Shop</p>
+      <h1 data-i18n="storeTitle">Storybook Store</h1>
+      <p data-i18n="storeIntro">Discover handmade little treasures created for playful imaginations.</p>
     </section>
 
-    <section class="card-grid">
-      <article class="activity-card">
-        <h2 data-i18n="colorTitle">Colour the Characters</h2>
-        <p data-i18n="colorDesc">Print or draw Bunny Benny and fill him with happy colors.</p>
-        <img class="activity-preview activity-wallpaper" src="assets/colouring-page-preview.png" alt="Colouring page preview">
-        <button class="btn btn-small" type="button" data-coloring-open data-i18n="openColoring">Start Coloring</button>
+    <section class="store-products" data-i18n-aria-label="storeProductsLabel" aria-label="Store products">
+      <article class="product-card">
+        <img class="product-image" src="assets/pipe-cleaner-octopus.jpeg" alt="Pink Little Pipe Cleaner Octopus">
+        <div class="product-details">
+          <h2 data-i18n="octopusProductTitle">Little Pipe Cleaner Octopus</h2>
+          <p class="product-material"><strong data-i18n="materialLabel">Materials:</strong> <span data-i18n="octopusMaterial">Pipe cleaners</span></p>
+          <div class="product-purchase">
+            <span class="product-price">Rs. 300</span>
+            <a class="btn btn-small" href="https://wa.me/94711485222?text=Hello%20Fairy%20Hummings!%20I%20would%20like%20to%20buy%20the%20Little%20Pipe%20Cleaner%20Octopus%20%28Rs.%20300%29." target="_blank" rel="noopener noreferrer" data-i18n="buyProduct">Buy</a>
+          </div>
+        </div>
       </article>
-      <article class="activity-card">
-        <h2 data-i18n="funQuizTitle">Fun Quiz</h2>
-        <p data-i18n="funQuizDesc">Test your story memory with five fun questions.</p>
-        <img class="activity-preview activity-wallpaper" src="assets/fun-quiz-cover.png" alt="Fun Quiz cover">
-        <a class="btn btn-small" href="quiz.html" data-i18n="goToQuiz">Go To Quiz</a>
-      </article>
-      <article class="activity-card">
-        <h2 data-i18n="storyStarTitle">Little Stars</h2>
-        <p data-i18n="storyStarDesc">Send us your artwork and let your creativity shine.</p>
-        <img class="activity-preview activity-wallpaper" src="assets/little-stars-cover.png" alt="Little Stars artwork invitation cover">
-        <a class="btn btn-small" href="https://wa.me/94711485222?text=Hello%20Fairy%20Hummings!%20I%20would%20like%20to%20send%20you%20my%20artwork." target="_blank" rel="noopener noreferrer" data-i18n="sendArtwork">Send</a>
+
+      <article class="product-card">
+        <img class="product-image" src="assets/magical-forest-book-product.png" alt="Magical Forest storybooks in Sinhala and English">
+        <div class="product-details">
+          <h2 data-i18n="magicalForestBookTitle">Magical Forest Storybook</h2>
+          <p class="product-material" data-i18n="magicalForestBookLanguages">Available in both Sinhala and English.</p>
+          <div class="product-purchase">
+            <span class="product-price-group" data-i18n-aria-label="magicalForestSalePriceLabel" aria-label="Original price Rs. 1,190, sale price Rs. 990">
+              <del class="product-old-price">Rs. 1,190</del>
+              <span class="product-price">Rs. 990</span>
+            </span>
+            <a class="btn btn-small" href="https://wa.me/94711485222?text=Hello%20Fairy%20Hummings!%20I%20would%20like%20to%20buy%20the%20Magical%20Forest%20Storybook%20%28Rs.%20990%29.%20Language%3A%20" target="_blank" rel="noopener noreferrer" data-i18n="buyProduct">Buy</a>
+          </div>
+        </div>
       </article>
     </section>
   </main>
@@ -91,6 +99,7 @@
       </div>
     </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
