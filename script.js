@@ -17,7 +17,8 @@ const translations = {
     magicalForestBookTitle: "Magical Forest Storybook",
     magicalForestBookLanguages: "Available in both Sinhala and English.",
     magicalForestSalePriceLabel: "Original price Rs. 1,190, sale price Rs. 990",
-    loginLink: "Login / Sign Up",
+    magicalForestSinhalaOutOfStock: "Sinhala: Out of stock",
+    magicalForestEnglishOutOfStock: "English: Out of stock",
     homeKicker: "Magical tales for little hearts",
     homeTitle: "Every Story Plants a Dream.",
     homeIntro: "Sweet stories, Cute characters, and playful activities to help children read, imagine, and smile.",
@@ -99,13 +100,6 @@ const translations = {
     aboutTitle: "Hi, I'm Nisini.",
     aboutIntro: "Fairy Hummings is a gentle place for children to discover magical stories, friendly characters, and small lessons about courage, kindness, and imagination.",
     aboutHope: "I hope every story feels like a warm bedtime hug and gives little readers a happy dream to carry with them.",
-    loginTitle: "Welcome Back",
-    closeLogin: "Close login",
-    parentEmail: "Parent Email",
-    emailPlaceholder: "hello@example.com",
-    password: "Password",
-    passwordPlaceholder: "Password",
-    loginNote: "A sample form for the Fairy Hummings website.",
     selectLanguage: "Select language",
   },
   si: {
@@ -126,7 +120,8 @@ const translations = {
     magicalForestBookTitle: "මැජික් කැලේ කතා පොත",
     magicalForestBookLanguages: "සිංහල සහ ඉංග්‍රීසි භාෂා දෙකෙන්ම ලබාගත හැකියි.",
     magicalForestSalePriceLabel: "පරණ මිල රු. 1,190යි, විශේෂ මිල රු. 990යි",
-    loginLink: "ප්‍රවේශ වන්න / ලියාපදිංචි වන්න",
+    magicalForestSinhalaOutOfStock: "සිංහල: තොග අවසන්",
+    magicalForestEnglishOutOfStock: "ඉංග්‍රීසි: තොග අවසන්",
     homeKicker: "පුංචි හදවත් සඳහා මායාමය කතා",
     homeTitle: "සෑම කතාවක්ම සිහිනයක් රෝපණය කරයි.",
     homeIntro: "දරුවන්ට කියවන්න, සිතන්න, සිනාසෙන්න උපකාර කරන මිහිරි කතා, කරුණාවන්ත චරිත, සහ සෙල්ලම් ක්‍රියාකාරකම්.",
@@ -208,13 +203,6 @@ const translations = {
     aboutTitle: "හායි, මම Nisini.",
     aboutIntro: "Fairy Hummings යනු දරුවන්ට මායාමය කතා, හිතවත් චරිත, සහ ධෛර්යය, කරුණාව, පරිකල්පනය පිළිබඳ පුංචි පාඩම් සොයාගැනීමට ඇති මෘදු තැනකි.",
     aboutHope: "සෑම කතාවක්ම උණුසුම් නින්දට පෙර වැළඳගැනීමක් වගේ දැනී, කුඩා පාඨකයින්ට සතුටු සිහිනයක් රැගෙන යාමට උපකාර වේවා කියා මම බලාපොරොත්තු වෙමි.",
-    loginTitle: "ආයුබෝවන්",
-    closeLogin: "ප්‍රවේශ කවුළුව වසන්න",
-    parentEmail: "දෙමාපිය ඊමේල්",
-    emailPlaceholder: "hello@example.com",
-    password: "මුරපදය",
-    passwordPlaceholder: "මුරපදය",
-    loginNote: "Fairy Hummings වෙබ් අඩවිය සඳහා සාම්පල් පෝරමයක්.",
     selectLanguage: "භාෂාව තෝරන්න",
   },
 };
@@ -241,7 +229,6 @@ const pageTitles = {
 const navToggle = document.querySelector(".nav-toggle");
 const mainNav = document.querySelector(".main-nav");
 const languageSelects = document.querySelectorAll(".language-select");
-const loginLinks = document.querySelectorAll(".login-link");
 const savedLanguage = getSavedLanguage();
 let currentLanguage = savedLanguage === "si" ? "si" : "en";
 
@@ -385,31 +372,6 @@ languageSelects.forEach((select) => {
   });
 });
 
-const modalMarkup = `
-  <div class="login-modal" id="loginModal" aria-hidden="true">
-    <section class="login-box" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
-      <header>
-        <h2 id="loginTitle" data-i18n="loginTitle">Welcome Back</h2>
-        <button class="close-login" type="button" aria-label="Close login" data-i18n-aria-label="closeLogin">x</button>
-      </header>
-      <form class="login-form">
-        <label>
-          <span data-i18n="parentEmail">Parent Email</span>
-          <input type="email" name="email" autocomplete="email" placeholder="hello@example.com" data-i18n-placeholder="emailPlaceholder">
-        </label>
-        <label>
-          <span data-i18n="password">Password</span>
-          <input type="password" name="password" autocomplete="current-password" placeholder="Password" data-i18n-placeholder="passwordPlaceholder">
-        </label>
-        <button class="btn" type="submit" data-i18n="loginLink">Login / Sign Up</button>
-        <p class="login-note" data-i18n="loginNote">A sample form for the Fairy Hummings website.</p>
-      </form>
-    </section>
-  </div>
-`;
-
-document.body.insertAdjacentHTML("beforeend", modalMarkup);
-
 const storyReaderMarkup = `
   <div class="story-reader-modal" id="storyReaderModal" aria-hidden="true">
     <section class="story-reader" role="dialog" aria-modal="true" aria-labelledby="storyReaderTitle">
@@ -499,8 +461,6 @@ const coloringMarkup = `
 
 document.body.insertAdjacentHTML("beforeend", coloringMarkup);
 
-const loginModal = document.querySelector("#loginModal");
-const closeLogin = document.querySelector(".close-login");
 const storyReaderModal = document.querySelector("#storyReaderModal");
 const storyReader = document.querySelector(".story-reader");
 const storyReaderTitle = document.querySelector("#storyReaderTitle");
@@ -539,11 +499,6 @@ let activeSheetDownload = "color-the-character.png";
 let lastColoringPoint = null;
 let isColoring = false;
 let coloringContext = null;
-
-function setLoginOpen(isOpen) {
-  loginModal.classList.toggle("open", isOpen);
-  loginModal.setAttribute("aria-hidden", String(!isOpen));
-}
 
 function setStoryReaderOpen(isOpen) {
   storyReaderModal.classList.toggle("open", isOpen);
@@ -818,21 +773,6 @@ function changeStoryPage(step) {
   );
 }
 
-loginLinks.forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-    setLoginOpen(true);
-  });
-});
-
-closeLogin.addEventListener("click", () => setLoginOpen(false));
-
-loginModal.addEventListener("click", (event) => {
-  if (event.target === loginModal) {
-    setLoginOpen(false);
-  }
-});
-
 storyOpenButtons.forEach((button) => {
   button.addEventListener("click", (event) => {
     event.preventDefault();
@@ -900,7 +840,6 @@ storyReaderModal.addEventListener("click", (event) => {
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
-    setLoginOpen(false);
     setStoryReaderOpen(false);
     setColoringOpen(false);
   }
